@@ -17,7 +17,10 @@ import cv2
 import datetime
 
 
+# UNCOMMENT THE FOLLOWING CODE TO TRAIN THE CNN FROM SCRATCH
+
 # BUILDING MODEL TO CLASSIFY BETWEEN MASK AND NO MASK
+'''
 model=Sequential()
 model.add(Conv2D(32,(3,3),activation='relu',input_shape=(150,150,3)))
 model.add(MaxPooling2D() )
@@ -60,8 +63,9 @@ model_saved=model.fit_generator(
         )
 
 model.save('mymodel.h5',model_saved)
+
 #To test for individual images
-'''
+
 #test_image=image.load_img('C:/Users/Karan/Desktop/ML Datasets/Face Mask Detection/Dataset/test/without_mask/30.jpg',target_size=(150,150,3))
 test_image=image.load_img(r'C:\Users\Karan\Pictures\Camera Roll/21.jpg',
                           target_size=(150,150,3))
