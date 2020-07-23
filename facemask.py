@@ -29,7 +29,6 @@ model.add(Flatten())
 model.add(Dense(100,activation='relu'))
 model.add(Dense(1,activation='sigmoid'))
 
-
 model.compile(optimizer='adam',loss='binary_crossentropy',metrics=['accuracy'])
 
 from keras.preprocessing.image import ImageDataGenerator
