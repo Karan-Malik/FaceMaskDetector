@@ -7,7 +7,7 @@ an accuracy of **98.2% on the training set** and **97.3% on the test set**. Then
 With the webcam capturing the video, the frames are preprocessed and and fed to the model to accomplish this task. The model works efficiently with no apparent lag time between
 wearing/removing mask and display of prediction.
 
-### The model is capable of predicting multiple faces with or without faces at the same time
+#### The model is capable of predicting multiple faces with or without faces at the same time
 
 ## Working 
 
