@@ -77,6 +77,8 @@ type(mymodel.predict_classes(test_image)[0][0])
 
 # IMPLEMENTING LIVE DETECTION OF FACE MASK
 
+mymodel=load_model('mymodel.h5')
+
 cap=cv2.VideoCapture(0)
 face_cascade=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
