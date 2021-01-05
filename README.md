@@ -55,6 +55,4 @@ python facemask.py
 
 #### The Project is now ready to use !!
 
-![image](new.JPG)
-
 
