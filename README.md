@@ -19,6 +19,9 @@ wearing/removing mask and display of prediction.
 
 ![image](nomask.png)
 
+
+
+
 ## Dataset
 
 The data used can be downloaded through this [link](https://data-flair.training/blogs/download-face-mask-data/) or can be downloaded from this repository as well (folders 'test' and 
@@ -51,4 +54,7 @@ python facemask.py
 ```
 
 #### The Project is now ready to use !!
+
+![image](new.JPG)
+
 
