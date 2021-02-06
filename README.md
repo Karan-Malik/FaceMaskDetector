@@ -42,11 +42,10 @@ followed by:
 cd FaceMaskDetector
 ```
 
-2. Ensure that you have all the required libraries used in facemask.py. In case a library is missing, download it using pip, by typing this on your Command Prompt:
+2. Download all libaries using::
 ```
-pip install 'library name'
+pip install -r requirements.txt
 ```
-Replace 'library-name' by the name of the library to be downloaded.
 
 3. Run facemask.py by typing the following command on your Command Prompt:
 ```
