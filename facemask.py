@@ -66,6 +66,7 @@ model.save('mymodel.h5',model_saved)
 
 #To test for individual images
 
+mymodel=load_model('mymodel.h5')
 #test_image=image.load_img('C:/Users/Karan/Desktop/ML Datasets/Face Mask Detection/Dataset/test/without_mask/30.jpg',target_size=(150,150,3))
 test_image=image.load_img(r'C:\Users\Karan\Pictures\Camera Roll/21.jpg',
                           target_size=(150,150,3))
