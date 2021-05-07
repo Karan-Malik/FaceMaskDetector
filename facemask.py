@@ -20,7 +20,7 @@ import datetime
 # UNCOMMENT THE FOLLOWING CODE TO TRAIN THE CNN FROM SCRATCH
 
 # BUILDING MODEL TO CLASSIFY BETWEEN MASK AND NO MASK
-'''
+
 model=Sequential()
 model.add(Conv2D(32,(3,3),activation='relu',input_shape=(150,150,3)))
 model.add(MaxPooling2D() )
@@ -68,13 +68,13 @@ model.save('mymodel.h5',model_saved)
 
 mymodel=load_model('mymodel.h5')
 #test_image=image.load_img('C:/Users/Karan/Desktop/ML Datasets/Face Mask Detection/Dataset/test/without_mask/30.jpg',target_size=(150,150,3))
-test_image=image.load_img(r'C:\Users\Karan\Pictures\Camera Roll/21.jpg',
+test_image=image.load_img(r'C:/Users/karan/Desktop/FaceMaskDetector/test/with_mask/1-with-mask.jpg',
                           target_size=(150,150,3))
 test_image
 test_image=image.img_to_array(test_image)
 test_image=np.expand_dims(test_image,axis=0)
-type(mymodel.predict_classes(test_image)[0][0])
-'''
+mymodel.predict(test_image)[0][0]
+
 
 # IMPLEMENTING LIVE DETECTION OF FACE MASK
 
@@ -92,7 +92,7 @@ while cap.isOpened():
         test_image=image.load_img('temp.jpg',target_size=(150,150,3))
         test_image=image.img_to_array(test_image)
         test_image=np.expand_dims(test_image,axis=0)
-        pred=mymodel.predict_classes(test_image)[0][0]
+        pred=mymodel.predict(test_image)[0][0]
         if pred==1:
             cv2.rectangle(img,(x,y),(x+w,y+h),(0,0,255),3)
             cv2.putText(img,'NO MASK',((x+w)//2,y+h+20),cv2.FONT_HERSHEY_SIMPLEX,1,(0,0,255),3)
