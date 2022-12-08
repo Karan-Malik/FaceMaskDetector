@@ -2,7 +2,7 @@ absl-py==0.11.0
 astunparse==1.6.3
 cached-property==1.5.2
 cachetools==4.2.0
-certifi==2020.12.5
+certifi==2022.12.7
 chardet==4.0.0
 DateTime==4.3
 flatbuffers==1.12
